@@ -8,6 +8,9 @@ pub fn main() -> Result<(), anyhow::Error> {
     info!("Running cargo fmt --check");
     run!("cargo", "fmt", "--check")?;
 
+    info!("Running typos");
+    run!("typos")?;
+
     info!("Running cargo deny --check");
     run!("cargo", "deny", "check")?;
 

@@ -10,6 +10,7 @@ pub fn main() -> Result<(), anyhow::Error> {
         "taplo-cli@=0.8.0",
         "cargo-msrv@=0.15.1",
         "cargo-wipe@=0.3.3",
+        "typos-cli@=1.16.23",
     )?;
 
     Ok(())
