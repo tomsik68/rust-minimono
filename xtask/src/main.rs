@@ -4,6 +4,7 @@ mod ci;
 mod ensure_installed;
 mod fmt;
 mod msrv;
+mod new;
 mod wipe;
 
 #[derive(Parser)]
@@ -27,6 +28,9 @@ enum Commands {
     /// Report minimum supported rust version
     Msrv,
 
+    /// Create a new crate
+    New(new::Command),
+
     /// Delete unused artifacts from the target directory
     Wipe,
 }
@@ -43,5 +47,6 @@ fn main() -> Result<(), anyhow::Error> {
         Commands::Fmt => fmt::main(),
         Commands::Msrv => msrv::main(),
         Commands::Wipe => wipe::main(),
+        Commands::New(new) => new::main(new),
     }
 }
