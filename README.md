@@ -48,7 +48,6 @@ There's no need to re-run this command - rustup remains installed on your machin
 ## Idempotent
 
 ```bash
-cargo install cargo-xtask
 cargo xtask ensure-installed
 ```
 
