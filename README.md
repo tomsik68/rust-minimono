@@ -53,6 +53,8 @@ cargo xtask ensure-installed
 
 Note that if you're running this for the first time, rustup automatically downloads the right version of Rust as declared in rust-toolchain.toml.
 
+This command may need to be re-run in case someone adds new tools to the set. The neat part is that re-running makes sure your environment is up-to-date.
+
 # Other available tasks
 
 Please run the following command to get an overview:
