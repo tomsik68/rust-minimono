@@ -24,7 +24,9 @@ Non-goals:
 
 ### crates
 
-Library Rust projects.
+Rust Crates that are part of this repository.
+
+You can use `cargo xt new` to create a new crate in this repository.
 
 ### xtask
 
@@ -51,7 +53,7 @@ There's no need to re-run this command - rustup remains installed on your machin
 cargo xtask ensure-installed
 ```
 
-Note that if you're running this for the first time, rustup automatically downloads the right version of Rust as declared in rust-toolchain.toml.
+Note that rustup ensures you're using the right version of Rust as declared in rust-toolchain.toml.
 
 This command may need to be re-run in case someone adds new tools to the set. The neat part is that re-running makes sure your environment is up-to-date.
 
@@ -61,4 +63,12 @@ Please run the following command to get an overview:
 
 ```bash
 cargo xtask help
+```
+
+# Is `cargo xt` too long?
+
+You can use a shell alias! Most shells will be okay with:
+
+```bash
+alias cx='cargo xt'
 ```
