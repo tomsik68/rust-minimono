@@ -1,6 +1,6 @@
 # Rust Minimono
 
-[![Rust Build Status](https://img.shields.io/github/actions/workflow/status/tomsik68/rust-minimono/rust.yml?style=for-the-badge)]](https://github.com/tomsik68/rust-minimono/actions/workflows/rust.yml)
+[![Rust Build Status](https://img.shields.io/github/actions/workflow/status/tomsik68/rust-minimono/rust.yml?style=for-the-badge)](https://github.com/tomsik68/rust-minimono/actions/workflows/rust.yml)
 
 This repository shows a possible layout of a Rust mini-monorepo.
 
