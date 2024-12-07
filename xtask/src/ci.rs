@@ -2,8 +2,8 @@ use devx_cmd::run;
 use tracing::info;
 
 pub fn main() -> Result<(), anyhow::Error> {
-    info!("Running taplo lint");
-    run!("taplo", "lint")?;
+    info!("Running taplo fmt check");
+    run!("taplo", "fmt", "--check")?;
 
     info!("Running cargo fmt --check");
     run!("cargo", "fmt", "--check")?;
